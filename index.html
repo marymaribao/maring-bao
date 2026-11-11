@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <link rel="icon" type="image/png" href="flower.png">
+</head>
+
+<body>
+   <title>Class Schedule</title>
+
+    <style>
+
+        /* =========================
+           PAGE DESIGN
+        ========================= */
+
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        /* Main container */
+        .table-container {
+            width: 95%;
+            margin: auto;
+        }
+
+
+        /* =========================
+           MAIN TITLE
+        ========================= */
+
+        .main-title {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+
+        /* =========================
+           TABLE
+        ========================= */
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+
+        /* =========================
+           ALL CELLS
+        ========================= */
+
+        th,
+        td {
+            border: 2px solid black;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+
+        /* =========================
+           CLASS SCHEDULE TITLE
+        ========================= */
+
+        .schedule-title {
+            background-color: #c9e3f0;
+            font-size: 21px;
+            font-weight: bold;
+            padding: 12px;
+        }
+
+
+        /* =========================
+           COLUMN HEADERS
+        ========================= */
+
+        .column-header {
+            background-color: #dcebd8;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 14px 5px;
+        }
+
+
+        /* =========================
+           COLUMN WIDTHS
+        ========================= */
+
+        .day-column {
+            width: 13%;
+        }
+
+        .time-column {
+            width: 19%;
+        }
+
+        .subject-column {
+            width: 26%;
+        }
+
+        .teacher-column {
+            width: 25%;
+        }
+
+        .room-column {
+            width: 17%;
+        }
+
+
+        /* =========================
+           DAY
+        ========================= */
+
+        .day {
+            font-size: 17px;
+            font-weight: bold;
+            padding: 15px;
+        }
+
+
+        /* =========================
+           TIME
+        ========================= */
+
+        .time {
+            font-size: 16px;
+            padding: 15px 5px;
+        }
+
+
+        /* =========================
+           SUBJECT
+        ========================= */
+
+        .subject {
+            font-size: 16px;
+            padding: 15px 5px;
+        }
+
+
+        /* =========================
+           TEACHER
+        ========================= */
+
+        .teacher {
+            font-size: 16px;
+            padding: 15px 5px;
+        }
+
+
+        /* =========================
+           ROOM
+        ========================= */
+
+        .room {
+            font-size: 17px;
+            font-weight: bold;
+            padding: 15px 5px;
+        }
+
+
+        /* =========================
+           WEDNESDAY PROJECT
+        ========================= */
+
+        .project {
+            font-size: 17px;
+            font-weight: bold;
+            padding: 15px;
+        }
+
+
+        /* =========================
+           PROJECT IMAGE
+        ========================= */
+
+        .project-image {
+            width: 75%;
+            max-width: 420px;
+            margin-top: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        /* =========================
+           OPTIONAL HOVER EFFECT
+        ========================= */
+
+        tbody tr:hover {
+            background-color: #f5fafa;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media screen and (max-width: 700px) {
+
+            body {
+                padding: 10px;
+            }
+
+            .table-container {
+                width: 100%;
+                overflow-x: auto;
+            }
+
+            table {
+                min-width: 850px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="table-container">
+
+        <!-- MAIN TITLE -->
+
+        <div class="main-title">
+            SAMPLE TABLE TO REPLICATE
+        </div>
+
+
+        <!-- =========================
+             CLASS SCHEDULE TABLE
+        ========================== -->
+
+        <table>
+
+            <!-- =========================
+                 CLASS SCHEDULE TITLE
+            ========================== -->
+
+            <thead>
+
+                <tr>
+
+                    <th colspan="5" class="schedule-title">
+                        CLASS SCHEDULE
+                    </th>
+
+                </tr>
+
+
+                <!-- =========================
+                     COLUMN HEADERS
+                ========================== -->
+
+                <tr>
+
+                    <th class="column-header day-column">
+                        Day
+                    </th>
+
+                    <th class="column-header time-column">
+                        Time
+                    </th>
+
+                    <th class="column-header subject-column">
+                        Subject
+                    </th>
+
+                    <th class="column-header teacher-column">
+                        Teacher
+                    </th>
+
+                    <th class="column-header room-column">
+                        Room
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <!-- =========================
+                     MONDAY - ROW 1
+                ========================== -->
+
+                <tr>
+
+                    <!-- rowspan = 3 because Monday has 3 subjects -->
+
+                    <td rowspan="3" class="day">
+                        Monday
+                    </td>
+
+                    <td class="time">
+                        7:00 - 8:00 AM
+                    </td>
+
+                    <td class="subject">
+                        Web Development
+                    </td>
+
+                    <td class="teacher">
+                        Ms. Gomez
+                    </td>
+
+                    <!-- Lab 101 covers all 3 Monday rows -->
+
+                    <td rowspan="3" class="room">
+                        COM LAB 101
+                    </td>
+
+                </tr>
+
+
+                <!-- =========================
+                     MONDAY - ROW 2
+                ========================== -->
+
+                <tr>
+
+                    <td class="time">
+                        8:30 - 9:30 AM
+                    </td>
+
+                    <td class="subject">
+                        System Analysis and Design
+                    </td>
+
+                    <td class="teacher">
+                        Mr. Trinidad
+                    </td>
+
+                </tr>
+
+
+                <!-- =========================
+                     MONDAY - ROW 3
+                ========================== -->
+
+                <tr>
+
+                    <td class="time">
+                        10:30 - 11:30 AM
+                    </td>
+
+                    <td class="subject">
+                        Data Communication
+                    </td>
+
+                    <td class="teacher">
+                        Ms. Lei
+                    </td>
+
+                </tr>
+
+
+                <!-- =========================
+                     TUESDAY - ROW 1
+                ========================== -->
+
+                <tr>
+
+                    <!-- Tuesday has 2 subjects -->
+
+                    <td rowspan="2" class="day">
+                        Tuesday
+                    </td>
+
+                    <td class="time">
+                        1:00 - 2:00 PM
+                    </td>
+
+                    <td class="subject">
+                        Animation
+                    </td>
+
+                    <td class="teacher">
+                        Mr. Arzadon
+                    </td>
+
+                    <!-- Lab 102 covers 2 Tuesday rows -->
+
+                    <td rowspan="2" class="room">
+                        COM LAB 102
+                    </td>
+
+                </tr>
+
+
+                <!-- =========================
+                     TUESDAY - ROW 2
+                ========================== -->
+
+                <tr>
+
+                    <td class="time">
+                        10:15 - 12:15 PM
+                    </td>
+
+                    <td class="subject">
+                        Programming 1
+                    </td>
+
+                    <td class="teacher">
+                        Ms. Jones
+                    </td>
+
+                </tr>
+
+
+                <!-- =========================
+                     WEDNESDAY
+                ========================== -->
+
+                <tr>
+
+                    <td class="day">
+                        Wednesday
+                    </td>
+
+
+                    <td class="time">
+                        5:00 PM -<br>
+                        6:00 PM
+                    </td>
+
+
+                    <!--
+                        colspan="2"
+                        combines Subject + Teacher
+                    -->
+
+                    <td colspan="2" class="project">
+
+                        Project Work / Laboratory
+
+                        <br><br>
+
+                        <!-- Laptop image -->
+
+                        <img
+                            class="project-image"
+                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80"
+                            alt="Project Work Laboratory"
+                        >
+
+                    </td>
+
+
+                    <td class="room">
+                        COM LAB 103
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>
